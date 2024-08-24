@@ -1,1 +1,36 @@
-le code pour le paiement du menu 
+le code pour le paiement du menu avec python 
+
+
+import requests
+
+# DÃ©finir l'endpoint de l'API
+endpoint = "https://api.mtn.com/payment/v1/transaction"
+
+# DÃ©finir la clÃ© API et le secret
+api_key = "VOTRE_CLE_API"
+api_secret = "VOTRE_SECRET_API"
+
+# DÃ©finir le corps de la requÃªte
+request_body = {
+    "amount": 1000,
+    "currency": "XOF",
+    "externalId": "1234567890",
+    "payer": {
+        "partyIdType": "MSISDN",
+        "partyId": "NUMERO_DE_TELEPHONE"
+    },
+    "payerMessage": "Paiement pour le menu",
+    "payeeNote": "Merci pour votre achat"
+}
+
+# Envoyer la requÃªte
+response = requests.post(endpoint, json=request_body, headers={
+    "X-API-KEY": api_key,
+    "X-API-SECRET": api_secret
+})
+
+# GÃ©rer la rÃ©ponse
+if response.status_code == 200:
+    print("Paiement rÃ©ussi!")
+else:
+    print("Erreur de paiement:", response.json())
