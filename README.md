@@ -1,7 +1,7 @@
 
 # Restaurant Website  (ICTU Restaurant)
 
-#### A landing page for a restaurant, ICTU Restaurant. It employs the use of HTML, CSS and Javascript to build it. 14-08-2017
+#### A landing page for a restaurant, ICTU Restaurant. It employs the use of HTML, CSS and Python to build it. August 2024
 
 #### By **ICT Students Level 2 Group 5**
 
@@ -12,8 +12,7 @@ The website, a landing page for ICTU Restaurant's is divided into the following 
 * A meal type and order Menu section.
 * An explanation of what we offer
 * A faster food delivery section.
-* Go to Menu Button
-    *A product and price page
+* Go to Menu Button (A product and price page)
 * A contact Information section.
 * A Quick Links section.
 * A Legal section
@@ -37,8 +36,7 @@ There are no known bugs.
 * HTML
 * CSS
 * BOOTSTRAP
-* JAVASCRIPT
-* jQUERY
+* Python
 ## Contributors
 *  Nyanyoh nyang mark okey
 *  FINAMOU ABDOUL BELLE GRÂCE
