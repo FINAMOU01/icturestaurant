@@ -17,32 +17,42 @@ def commande_view(request, plat_id):
     plat = get_object_or_404(Plat, id=plat_id)
 
     if request.method == 'POST':
-        form = commandeForm(request.POST)
+        form = commandeForm(request.POST, request.FILES)
         print(form.errors)  # Affiche les erreurs du formulaire
         if form.is_valid():
             quantite = form.cleaned_data['quantite']
+            receipt = form.cleaned_data.get('deposit_receipt')
+            print("Receipt:", receipt)
             if request.POST.get('action') == 'cancel':
                 # L'utilisateur a cliqué sur le bouton "Annuler"
                 messages.info(request, 'command cancelled.')
                 return redirect('menu')
-            if plat.disponible >= quantite:
+            if quantite <= 5:
              #reserver le plat
-             commande.objects.create(
-                plat=plat,
-                nom_client=form.cleaned_data['nom_client'],
-                email_client=form.cleaned_data['email_client'],
-                quantite=form.cleaned_data['quantite'],
-                heure_disponibilite=heure_disponibilite,
-                mode_paiement=mode_paiement 
-             )
+                 commande.objects.create(
+                   plat=plat,
+                   nom_client=form.cleaned_data['nom_client'],
+                   email_client=form.cleaned_data['email_client'],
+                   quantite=quantite,
+                   deposit_receipt=receipt
+             
+                )
+                 plat.save()
+                 messages.success(request, 'Order successful!')
+                 return redirect('confirmation')
             
-             plat.disponible -= quantite
-             plat.save()
-             messages.success(request, 'Order successful!')
-             return redirect('menu')
             else:
-                messages.error(request, 'Apologies,but your order has been declined due to eceeding the maximum allowed number of plates (5 plats)')
+
+                messages.error(request, 'Apologies,but your order has been declined due to eceeding the maximum allowed number of plates (5 plates)')
     else:
         form = commandeForm()
 
     return render(request, 'commande.html', {'form': form, 'plat': plat})
+def view_confirmation(request):
+    info = commande.objects.all()
+    for item in info:
+        nom=item.nom_client
+    return render(request, 'confirmation.html' ,{'name':nom})
+
+
+
