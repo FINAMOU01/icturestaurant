@@ -35,7 +35,6 @@ There are no known bugs.
 
 * HTML
 * CSS
-* BOOTSTRAP
 * Python
 ## Contributors
 *  Nyanyoh nyang mark okey
