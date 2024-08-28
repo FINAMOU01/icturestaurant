@@ -7,7 +7,7 @@ class commandeForm(forms.Form):
         label="Click here to download deposit receipt image :" ,
         widget=forms.ClearableFileInput(attrs={
         'class':'form-control'}),
-        required=False
+        required=True
         
         
     )
