@@ -19,7 +19,7 @@ The website, a landing page for ICTU Restaurant's is divided into the following 
 * A Connect with Us section
 * A footer section.
 
-## Setup/Installation Requirements
+## Setup/Installation Requirements/Access
 
 To view the website, 
 * click [ICTU Restaurant Website](https://icturestau.codescm.com/)
