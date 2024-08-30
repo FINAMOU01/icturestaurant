@@ -27,16 +27,17 @@ class Menu(models.Model):
 
 class commande(models.Model):
     STATUT_CHOICES = [
-        ('en_attente', 'En attente'),
-        ('livree', 'Livrée'),
-        ('annulee','Annulee')
+        ('pending', 'Pending'),
+        ('validated', 'Validated'),
+        ('delivered', 'Delivered'),
+        ('cancelled','Cancelled'),
     ]
     plat = models.ForeignKey(Plat, on_delete=models.CASCADE)
     quantite = models.PositiveIntegerField()
     nom_client = models.CharField(max_length=100 ,default='client')
     email_client = models.EmailField(default='unknow@example.com')
     date_commande = models.DateTimeField(auto_now_add=True)
-    heure_disponibilite = models.TimeField(default=timezone.now)
+    heure_disponibilite = models.TimeField(default=timezone.now().time())
     statut = models.CharField(max_length=20, choices=STATUT_CHOICES,default='en_attente')
     deposit_receipt = models.ImageField(upload_to='receipts/', null=True, blank=True)
 

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICTU RESTUARANT</title>
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'styles.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap">
+  </head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+          <img src="{% static 'images/logo.png' %}" alt="logo">
+        </a>
+        <nav class="nav-items">
+          <a href="{%url 'home'%}">Home</a>
+          <a href="{% url 'about_us' %}">About</a>
+          <a href="{% url 'contact'%}">Contact</a>
+        </nav>
+      </header>
+
+    <main>
+        <div class="intro">
+            <h1>ABOUT US</h1>
+            
+          </div>
+        <p>
+            This project was born out of a shared passion for food and a desire to create a space where
+             students could gather, socialize, and enjoy delicious, affordable meals. 
+             Our team of 7 dedicated individuals came together with a vision to transform the traditional cafeteria experience into a vibrant and inviting dining destination.
+
+        </p>
+        
+            
+           
+
+        <section>
+            <h2>Our Story</h2>
+            <p>
+                Once upon a time, in ICTU university, a group of eight friends dreamed of more than just textbooks and homework. They wanted to create something special, something that would bring joy and nourishment to their school community. So, they decided to open a restaurant!
+
+                With their hearts full of passion and their hands ready to work, they transformed a small, empty space into a cozy and inviting dining area. They learned about cooking, food safety, and customer service, .
+                
+                Now, their restaurant is a place where students, teachers, and staff come together to enjoy delicious meals and make lasting memories. It's a testament to their hard work, dedication, and the power of friendship.
+            </p>
+        </section>
+
+        <section>
+            <h2>Our Mission</h2>
+            <p>
+                "We want to give students a great dining experience that’s more than just eating. 
+                We offer lots of different, tasty food made with fresh ingredients. 
+                Our goal is to make our restaurant a friendly place where students  and staff menbers can enjoy their meals and have a good time."
+            
+            </p>
+        </section>
+
+        <section class="team-members">
+            <h1>Team Members</h1>
+            <div class="team-member">
+                <img src="{% static 'images/group leader.jpg' %}" alt="Image Description" width="200" height="150">
+                <h4>FINAMOU ABDOUL</h4>
+                <p>Group leader: Worked on the back end, the menu page, and the order process</p>
+            </div>
+            <div class="team-member">
+                <img src="{% static 'images/favour.jpg' %}" alt="Image Description" width="200" height="150">
+                <h4>Tah Bunikih Favour</h4>
+                <p>Worked on front end/design</p>
+            </div>
+            <div class="team-member">
+                <img src="{% static 'images/kisso.jpg' %}" alt="Image Description" width="200" height="150">
+                <h4>Eskil Kisso</h4>
+                <p>Worked on Design and backend also Marketing director during project, Photographer</p>
+            </div>
+            <div class="team-member">
+                <img src="{% static 'images/mark.jpg' %}" alt="Image Description" width="200" height="150">
+                <h4>Nyanyoh Nyang Mark Okey</h4>
+                <p>group creator and project initiator</p>
+            </div>
+            <div class="team-member">
+                <img src="{% static 'images/ondoa.jpg' %}" alt="Image Description" width="200" height="150">
+                <h4>Ondoa Ondoa Etienne</h4>
+                <p>Project Founder</p>
+            </div>
+            <div class="team-member">
+                <img src="{% static 'images/pounz.jpg' %}" alt="Image Description" width="200" height="150">
+                <h4>MBAH MBAKU JERRY</h4>
+                <p>Worked on front end OF the project(about us and contact us page)</p>
+            </div>
+            <div class="team-member">
+                <img src="{% static 'images/matari.jpeg' %}" alt="Image Description" width="200" height="150">
+                <h4>HAOUA BARKALLAH MATARI</h4>
+                <p>Worked on the project report and the back end</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="copy">&copy; Group 5 level 2 ICTU</div>
+        <div class="bottom-links">
+          <div class="links">
+            <span>More Info</span>
+            <a href="./index.html">Home</a>
+            <a href="./about_us.html">About</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="links">
+            <span>Social Links</span>
+            <a href="https://www.facebook.com/ictu_restuarant"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/jrpounz75131"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/ictu_restaurant/"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/652397580"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
