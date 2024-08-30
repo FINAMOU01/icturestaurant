@@ -18,19 +18,19 @@
         </div>
     {% endif %}
 
-    <div class="order_form" enctype="multipart/form-data">
-     <form method="post">
+    <div class="order_form">
+     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.nom_client.label_tag }} {{ form.nom_client }}<br>
         {{ form.email_client.label_tag }} {{ form.email_client }}<br>
         {{ form.quantite.label_tag }} {{ form.quantite }}<br>
-        <label for="id_heure_disponibilite">Choose your preferred pickup time</label>
-        <input type="time" class="form-control" id="id_heure_disponibilite" name="heure_disponibilite" required><br>
+        {{ form.heure_disponibilite.label_tag }} {{ form.heure_disponibilite }}<br>
         <p>Make the payment through our various numbers to complete your order</p>
         <div class="depot">
          <span class="orange">ORANGE MONEY: 658 20 16 29</span><br>
          <span class="MTN">MOBILE MONEY : 653 84 42 44</span><br>
         </div>
+        
         {{ form.deposit_receipt.label_tag}}{{ form.deposit_receipt}}
         {% for field in form %}
         {% for error in field.errors %}

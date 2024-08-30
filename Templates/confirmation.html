@@ -1,5 +1,5 @@
 {% extends "base.html"%}
-{% load static%}
+{% load static %}
 {%block content%}
 <div class="row " style="margin-top: 20px;">
     <div class="col-md-10 text-center">
@@ -7,4 +7,13 @@
      <h4>Your order has been received successfully . We await your arrival to savour your dish</h4>
     </div>
 </div>
+<a href="{% url 'menu'%}" style=" display: inline-block;
+
+margin-top: 4px;
+margin-bottom: 20px;
+align-self: right;
+color: white;
+background-color: orange;
+padding: 1rem;
+border-radius: 0.5rem;" >retun in the menu</a>
 {%endblock%}

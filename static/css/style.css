@@ -36,7 +36,7 @@ body{
     font-size: 0.9rem;
 }
 
-.btn-primary {
+.btn  {
     background-color: #ff7b00;
     border-color: #007bff;
 }
@@ -115,3 +115,5 @@ body{
   .order_form .MTN {
     color: #00698f;
   }
+  /*css du bouton retour*/
+ 

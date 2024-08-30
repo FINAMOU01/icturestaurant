@@ -33,6 +33,7 @@ def commande_view(request, plat_id):
                    plat=plat,
                    nom_client=form.cleaned_data['nom_client'],
                    email_client=form.cleaned_data['email_client'],
+                   heure_disponibilite=form.cleaned_data['heure_disponibilite'],
                    quantite=quantite,
                    deposit_receipt=receipt
              
