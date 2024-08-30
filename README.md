@@ -24,7 +24,7 @@ The website, a landing page for ICTU Restaurant's is divided into the following 
 To view the website, 
 * click [ICTU Restaurant Website](https://icturestau.codescm.com/)
 or 
-* copy the link https://icturestau.codescm.com/ paste it to your browser and load it.  
+* copy the link https://icturestau.codescm.com/ paste it to your browser(Google Chrome, Microsoft Edge, Mozilla Firefox...) and load it.  
 
 
 ## Known Bugs
