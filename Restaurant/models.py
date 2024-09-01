@@ -1,6 +1,7 @@
 from typing import Any
 from django.db import models
 from django.utils import timezone
+import datetime
 
 # Create your models here.
 #class plat
@@ -36,7 +37,7 @@ class commande(models.Model):
     quantite = models.PositiveIntegerField()
     nom_client = models.CharField(max_length=100 ,default='client')
     email_client = models.EmailField(default='unknow@example.com')
-    date_commande = models.DateTimeField(auto_now_add=True)
+    date_commande = models.DateTimeField(default=datetime.datetime.now())
     heure_disponibilite = models.TimeField(default=timezone.now().time())
     statut = models.CharField(max_length=20, choices=STATUT_CHOICES,default='en_attente')
     deposit_receipt = models.ImageField(upload_to='receipts/', null=True, blank=True)
