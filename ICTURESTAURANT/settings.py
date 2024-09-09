@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-4f%r!^p9eiq(-y8#m^in9e9$9h3=v^u9eoqa7govy-&j+@gyhn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost','.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app','now.sh','127.0.0.1','localhost']
 
 
 
@@ -85,8 +85,12 @@ WSGI_APPLICATION = 'ICTURESTAURANT.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'XErkSubLgVdYHfDRIRUAKIslYWfJchmF',
+        'HOST': 'meticulous-empathy.railway.internal',
+        'PORT': '5432',
     }
 }
 
@@ -145,3 +149,5 @@ EMAIL_HOST_PASSWORD = 'your-password'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
