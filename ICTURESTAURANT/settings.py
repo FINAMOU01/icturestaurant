@@ -12,9 +12,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
-import django_heroku
 import dj_database_url
-
+import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'Templates')
@@ -32,7 +31,7 @@ TIME_ZONE = 'Africa/Douala'
 SECRET_KEY = 'django-insecure-4f%r!^p9eiq(-y8#m^in9e9$9h3=v^u9eoqa7govy-&j+@gyhn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = False 
 
 ALLOWED_HOSTS = []
 
@@ -87,13 +86,15 @@ WSGI_APPLICATION = 'ICTURESTAURANT.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': { 
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 DATABASES = {
-    'default': { 
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.config()
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -130,7 +131,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_ROOT = os.path.join(BASE_DIR, 'staticfiles'),
+STATICFILES_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
      os.path.join(BASE_DIR, 'static'),
     ]
@@ -151,5 +152,4 @@ EMAIL_HOST_PASSWORD = 'your-password'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
 django_heroku.settings(locals())
