@@ -1,0 +1,45 @@
+ICTU Restaurant Website Architecture
+
+1. Website Opening
+• Description: This step represents the moment when the user accesses the restaurant’s website, either by scanning a QR code or using a direct link. 
+Example: A student scans the QR code displayed at the entrance of the university restaurant with his smartphone and is redirected to the website’s homepage.
+
+2. Placing an Order
+• Description: Once on the site, the user can begin placing an order by selecting the products or dishes he wishes to purchase.
+Example: The user browses the online menu and adds a pizza and a drink to his cart.
+
+3. Selecting Products/Dishes
+• Description: The user selects the products or dishes he wishes to order. This step includes viewing descriptions, prices, and images of the dishes.
+Example: The user clicks on the “Menu” section and chooses a main course, a dessert, and a drink.
+
+4. Completing Customer Information
+• Description: The user must provide some personal information necessary to process the order, such as name, phone number, and email address.
+Example: The user enters their name and phone number to receive notifications about the status of their order.
+
+5. Payment (Orange Money/MTN Money)
+• Description: The user makes the payment for their order using mobile payment services such as Orange Money or MTN Money. They must also add proof of payment by uploading a file.
+Example: After selecting their dishes, the user chooses to pay via Orange Money, makes the payment on their phone, and then uploads a screenshot of the payment receipt to the website.
+
+6. Payment Confirmation
+• Description: Once the payment is made, the user receives a payment confirmation. This confirmation can be sent by SMS or email.
+Example: The user receives an SMS confirming that their payment has been received and that their order is being processed.
+
+7. Place the Order
+• Description: After the payment is confirmed, the user officially places their order. This step triggers the order preparation process at the restaurant.
+Example: The user clicks on “Place Order” after receiving the payment confirmation.
+
+8. Order Reception at the Restaurant
+• Description: The order is received by the restaurant staff, who start preparing the ordered dishes.
+Example: The restaurant staff receives a notification of a new order and starts preparing the dishes selected by the user.
+
+9. Order Collection by the Customer
+• Description: Once the order is ready, the user can pick it up from the restaurant.
+Example: The user receives a notification that his order is ready and goes to the restaurant to pick it up.
+
+10. Database Update
+• Description: All the information related to orders, payments and users is updated in the website’s database.
+Example: The user’s order details, including the ordered dishes and payment, are saved in the database for future reference.
+
+11. Order Management by Administrator
+• Description: Website administrators can manage orders, confirm payments, and update the database.
+Example: An administrator logs into the website dashboard to check for new orders, confirm received payments, and update order status.
