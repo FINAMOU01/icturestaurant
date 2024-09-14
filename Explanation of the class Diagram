@@ -1,0 +1,123 @@
+Explanation of the class Diagram
+
+		The class diagram of the ICTU Restaurant website illustrates the structure of the system by showing its classes, their attributes and the relationships between them. This diagram is essential to understand how the different parts of the system interact and how the data is organized.
+
+ Main Classes and their Attributes
+
+1. Customer (Client)
+
+Attributes:
+
+o CustomerID: int
+o name: string
+o email: string
+
+Methods:
+
+o viewMenu() : void
+o placeOrder() : void
+o makePayment() : void
+o cancelOrder() : void
+o loginPage() : void
+
+Description: This class represents the customers of the restaurant. Customers can view the menu, place orders, make payments, cancel orders, and log in to their account.
+
+Example: A customer named “John Doe” with ID 123 can view the menu, place an order, and make a payment through the website.
+
+2. Order
+
+Attributes:
+
+o OrderID: int
+o OrderDate: date
+o OrderStatus: string
+o totalItems: int
+o paymentReceipt: field
+
+Methods:
+
+o updateStatus(): void
+
+Description: This class represents orders placed by customers. It contains information about the order date, order status, total number of items, and payment receipt.
+
+Example: An order with ID 456 placed on September 1, 2024, containing 3 items, with a status of “Preparing”.
+
+3. Menu
+
+Attributes:
+
+o MenuID: int
+o items: List<MenuItem>
+o Methods:
+o addItem(): void
+o removeItem(): void
+o updateItem(): void
+
+Description: This class represents the restaurant menu. It contains a list of menu items and methods to add, remove, or update items.
+
+Example: The restaurant menu contains items like “Poulet DG”, “Ndolé”, “Beverage”.
+
+4. MenuItem (Menu Item)
+
+Attributes:
+
+o ItemID : int
+o name : string
+o description : string
+o price : float
+o availability : Boolean
+
+Methods:
+
+o modify() : void
+
+Description: This class represents an individual menu item. It contains information about the name, description, price and availability of the item.
+
+Example: A menu item with ID 789, named “poulet DG”, described as “poulet DG avec les bananes plantains, frits, carrots et haricot vert”, priced at 4000F, available.
+
+5. Payment
+
+Attributes:
+
+o PaymentID : int
+o paymentDate : date
+o amount : float
+o paymentMethod : string
+
+Methods:
+
+o processPayment() : void
+
+Description: This class represents payments made by customers. It contains information about the payment date, the amount and the payment method used.
+
+Example: A payment with ID 321, made on September 1, 2024, for an amount of 6000F, via Orange Money.
+
+6. Admin (Administrator)
+
+Attributes:
+
+o AdminID: int
+o name: string
+o email: string
+o password: string
+
+Methods:
+
+o manageMenu(): void
+o manageOrder(): void
+
+Description: This class represents the administrators of the website. Administrators can manage the menu and orders.
+
+Example: An administrator named “Alice” with ID 101 can add new items to the menu and update the status of orders.
+
+Relationships between Classes
+
+oCustomer and Order: A customer can place multiple orders. This is represented by an association relationship between the Customer and Order classes.
+
+oOrder and Payment: Each order can have an associated payment. This is represented by an association relationship between the Order and Payment classes.
+
+oMenu and Menu Item: A menu contains multiple menu items. This is represented by an aggregation relationship between the Menu and Menu Item classes.
+
+Conclusion
+
+	The ICTU Restaurant website class diagram provides an overview of the system structure, showing how the different classes interact and what data they contain. This diagram is essential to understand the internal workings of the site and to facilitate the development and maintenance of the system.
