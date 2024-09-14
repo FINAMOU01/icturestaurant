@@ -1,0 +1,51 @@
+The sequence diagram for the “Cancel an Order” process of ICTU restaurant illustrates the interactions between different actors and systems during the order cancellation procedure. This diagram is essential to understand how the different parts of the system interact to allow a user to cancel an order.
+
+“Cancel an Order” Sequence Diagram
+
+Actors and Entities
+The sequence diagram includes three main entities:
+o User
+o Restaurant Website
+o Order System
+Interaction Description
+
+1. Access Order Page
+o Interaction: The user accesses their orders page on the restaurant website.
+o Message: access orders page
+Example: A user logs into their account and navigates to the “My Orders” section to view their current orders.
+
+2. Select Order to Cancel
+o Interaction: The user selects the order they want to cancel.
+o Message: select order to cancel
+Example: The user selects a specific order they want to cancel from their list of orders.
+
+3. Send Cancellation Request
+o Interaction: The restaurant website sends the cancellation request to the ordering system.
+o Message: send cancellation request
+Example: The website forwards the order cancellation request to the ordering system for processing.
+
+4. Validate Cancellation Request
+o Interaction: The ordering system checks if the order can be canceled.
+o Message: validate cancellation request
+Example: The ordering system checks if the order is still being processed and can be canceled.
+5. Response from the Ordering System (Success)
+o Interaction: If the order can be canceled, the ordering system sends a success response to the website.
+o Message: cancellation success
+Example: The ordering system confirms that the order has been successfully canceled.
+
+6. Update Order Status
+o Interaction: The restaurant website updates the order status to indicate that it has been canceled.
+o Message: update order status
+Example: The user sees that the status of their order has changed to “Cancelled” on their orders page.
+7. Order System Response (Failure)
+o Interaction: If the order cannot be cancelled, the order system sends a failure response to the website.
+o Message: cancellation failure
+Example: The order system indicates that the order cannot be cancelled because it is already being delivered.
+
+8. Display Failure Message
+o Interaction: The restaurant website displays an error message to the user.
+o Message: display error message
+Example: The user sees a message that the order cancellation failed and is asked to contact customer service for further assistance.
+
+Conclusion
+	The sequence diagram for the “Cancel an Order” process clearly shows the steps and interactions required for a user to cancel an order on the ICTU restaurant website. Each interaction is essential to ensure that the cancellation process is handled efficiently and seamlessly. This diagram helps visualize the data flow and critical decision points in the order cancellation process.
