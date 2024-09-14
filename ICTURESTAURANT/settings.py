@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-4f%r!^p9eiq(-y8#m^in9e9$9h3=v^u9eoqa7govy-&j+@gyhn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://icturestaurant-6ed82d8c0eb7.herokuapp.com/','127.0.0.1']
 
 
 
@@ -93,7 +93,7 @@ WSGI_APPLICATION = 'ICTURESTAURANT.wsgi.application'
 #     }
 # }
 DATABASES = {
-    'default': dj_database_url.config()
+    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
 }
 
 # Password validation
