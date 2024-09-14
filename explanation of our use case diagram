@@ -1,0 +1,28 @@
+Use Case	               Actor       	Description	                                                          Example
+
+Login to Website       	Customer	    Access the website by scanning a QR code or using a direct link.    	A student scans the QR code displayed at the restaurant entrance and is redirected to the website.
+
+View Menu             	Customer	    View the restaurant menu with descriptions and prices of dishes.	    The user browses the “Menu” section to see the available options for lunch
+
+Place an Order	        Customer	    Select dishes and add them to the cart.	                               The user adds a pizza and a drink to their cart.
+
+Make a Payment          Customer	    Pay for the order using mobile payment services.	                      The user chooses to pay via Orange Money and uploads a screenshot of the receipt.
+(Orange Money/MTN Money)
+
+Scan QR Code to Copy	   Customer	      Access a specific page by scanning a QR code.	                          The user scans a QR code to quickly access the reservation page.
+ Page Link
+
+Give Pickup Time            Customer	 Specify a pickup time for the order.	                                   The user indicates that he will pick up his order at 1:00 PM.
+for Orders
+
+View Past Pages            	Customer	  View the history of past orders.	                                         The user checks the details of his previous order to order the same dish.
+ (Order History)
+
+Cancel an Order           Customer	     Cancel an order before it is prepared.	                                 The user decides to cancel an order after realizing that he has selected the wrong dish.
+	
+Social Media Interactions	 Customer	     Connect to the restaurant’s Facebook and Instagram pages, chat via WhatsApp.	 The user follows the restaurant’s Instagram page to stay updated on new promotions.
+
+Manage Menu              	Admin	            Add, edit or delete dishes from the menu.                               	The admin adds a new dish to the menu for the next week.
+
+Login to WhatsApp         	Admin	           Use WhatsApp to communicate with customers.	                              The admin answers customer queries on WhatsApp regarding operating hours.
+
