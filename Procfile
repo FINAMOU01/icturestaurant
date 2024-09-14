@@ -1,1 +1,1 @@
-web: gunicorn ICTURESTAURANT.wsgi --log-file -
+web: gunicorn ICTURESTAURANT.wsgi:application --log-file -
