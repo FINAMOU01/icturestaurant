@@ -22,9 +22,9 @@ The website, a landing page for ICTU Restaurant's is divided into the following 
 ## Setup/Installation Requirements/Access
 
 To view the website, 
-* click [ICTU Restaurant Website](https://icturestau.codescm.com/)
+* click [ICTU Restaurant Website](https://icturestaurant-6ed82d8c0eb7.herokuapp.com/)
 or 
-* copy the link https://icturestau.codescm.com/ paste it to your browser(Google Chrome, Microsoft Edge, Mozilla Firefox...) and load it.  
+* copy the link https://icturestaurant-6ed82d8c0eb7.herokuapp.com/ paste it to your browser(Google Chrome, Microsoft Edge, Mozilla Firefox...) and load it.  
 
 
 ## Known Bugs
