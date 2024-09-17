@@ -1,5 +1,5 @@
 
-# Restaurant Website  (ICTU Restaurant)
+# Restaurant website (ICTU Restaurant)
 
 #### A landing page for a restaurant, ICTU Restaurant. It employs the use of HTML, CSS and Python to build it. August 2024
 
@@ -37,7 +37,7 @@ There are no known bugs.
 * CSS
 * Python
 ## Contributors
-*  Nyanyoh nyang mark okey
+*  NYANYOH NYANG MARK OKEY 
 *  FINAMOU ABDOUL BELLE GRÂCE
 *  MBAH MBAKU JERRY
 *  Tah Bunikih Favour Yeuwohnyi
